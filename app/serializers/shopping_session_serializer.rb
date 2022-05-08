@@ -1,3 +1,3 @@
 class ShoppingSessionSerializer < ActiveModel::Serializer
-  attributes :id, :user_id, :total
+  attributes :id, :user_id, :product_id
 end
