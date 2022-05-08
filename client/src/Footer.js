@@ -1,4 +1,8 @@
 import React from 'react';
-import './Header.css'; 
+import './Footer.css';  
 
-export default Header;
+    function Footer() {
+
+    }
+
+export default Footer;
