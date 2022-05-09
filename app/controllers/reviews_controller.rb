@@ -6,11 +6,12 @@ class ReviewsController < ApplicationController
 
     def create
         review = Review.create!(review_params)
-        render json: review, status :created
+        render json: review, status: :created
     end
 
     private
-    def plant_params
+
+    def review_params
         params.permit(:name, :email, :review)
     end
     

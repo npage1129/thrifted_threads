@@ -11,6 +11,7 @@
     "heroku-postbuild": "npm run clean && npm run build && npm run deploy"
   },
   "dependencies": {
-    "all": "^0.0.0"
+    "all": "^0.0.0",
+    "cors": "^2.8.5"
   }
 }

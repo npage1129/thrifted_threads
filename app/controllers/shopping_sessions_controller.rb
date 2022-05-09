@@ -2,12 +2,12 @@ class ShoppingSessionsController < ApplicationController
  
     def create
         shopping_session = Shopping_Session.create!(shopping_session_params)
-        render json: shopping_session, status: created
+        render json: shopping_session, status: :created
     end
 
     def update
         shopping_session = Shopping_Session.find(params[:id])
-        shopping_session.update(plant_params)
+        shopping_session.update(shopping_session_params)
         render json: shopping_session
     end 
 
