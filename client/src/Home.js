@@ -13,7 +13,7 @@ function Home(){
         
     })
         .then((resp) => resp.json())
-        .then((data) => console.log(data))
+        .then((data) => setItem(data))
     },[]) 
 
     return(
