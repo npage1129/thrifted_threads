@@ -19,10 +19,11 @@ header p {
 .footer {
     display: flex;
     flex-flow: row wrap;
-    padding: 50px;
     color: darkcyan;
-    background-color: rgb(83, 43, 43);
-    border-radius: 30px;
+    background-color: rgb(214, 191, 191);
+    /* background-image: url('https://st4.depositphotos.com/2051931/24179/i/1600/depositphotos_241793326-stock-photo-white-fabric-textile-background-seamless.jpg'); */
+    opacity: .80;
+    position:fixed;bottom:0;left:0;right:0;height:165px;
 }
 
 .footer > * {
@@ -55,15 +56,18 @@ h2 {
 .r-footer {
     display: flex;
     flex-flow: row wrap;
+    
 }
 
 .r-footer > * {
     flex: 1 50%;
     margin-right: 1.25em;
+    margin:auto;
+    padding-left: 70px;
 }
 
 .box a {
-    color: #999;
+    color: black;
 }
 
 .h-box {

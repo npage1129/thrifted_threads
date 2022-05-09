@@ -1,5 +1,6 @@
 import React from 'react';
 import './Header.css'; 
+import logo from "../src/images/logoWithoutB.png"
 
 function Header(){
     function takeHome(){
@@ -7,11 +8,11 @@ function Header(){
     }
     return(
         <div id="Header">
-            <p>Thrifted Threads</p>
+            <img className='logo' src={logo}></img>
             <nav className="navBar">
-                <a className ='navLink' href="./Home" >Home<br></br></a> 
-                <a className ='navLink' href="./Clothing" >Clothing<br></br></a> 
-                <a className ='navLink' href="./Sale">Sale<br></br></a>
+                <a className ='navLink' href="./Home" >Home</a> 
+                <a className ='navLink' href="./Clothing" >Clothing</a> 
+                <a className ='navLink' href="./Sale">Sale</a>
             </nav>
             {/* <img className="headerImage" src={logo} alt="Logo" onClick={takeHome}></img>                                                     */}
 </div>
