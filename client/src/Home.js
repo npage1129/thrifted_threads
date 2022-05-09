@@ -1,14 +1,13 @@
 import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
-// import Login from './Login';
 import './Home.css';
 
 function Home(){
     return(
         <div id="home" >
             <Header id='header'/>
-            {/* <Login id='Login' /> */}
+            <h1>I am Home</h1>
             <Footer id='footer'/>
         </div> 
     )

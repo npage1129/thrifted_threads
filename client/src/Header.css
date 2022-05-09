@@ -1,0 +1,25 @@
+body {
+    font-family: poppins;
+    margin: 0;
+    display: grid;
+    font-size: 14px;
+}
+
+#Header {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 50px;
+    color: darkcyan;
+    background-color: rgb(83, 43, 43);
+    border-radius: 30px;
+}
+
+#Header a {
+    text-decoration: none;
+    color: #999;
+}
+
+#Header p {
+    font-size: 1.5em;
+    padding-right: 40px;
+}
