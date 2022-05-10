@@ -13,9 +13,11 @@ function Header(){
                 <a className ='navLink' href="./Home" >Home</a> 
                 <a className ='navLink' href="./Clothing" >Clothing</a> 
                 <a className ='navLink' href="./Sale">Sale</a>
+                <a className ='navLink' href="./Cart">Cart</a>
+                <p>Items in Cart</p>
             </nav>
             {/* <img className="headerImage" src={logo} alt="Logo" onClick={takeHome}></img>                                                     */}
 </div>
-   )
+)
 }
 export default Header;
