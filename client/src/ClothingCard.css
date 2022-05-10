@@ -1,26 +1,42 @@
 
-.img{
-    display: flex;
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 1fr;
+    text-align: center;
+    margin-left: 115px;
+    /* margin-right: 100px; */
+}
+.cards{
+    height: fit-content;
+    width: fit-content;
+    position: relative;
+    justify-content: center;
+    margin: 10px;
+}
+.image{
+    margin-top: 100px;
     border: 2px solid rgb(83, 78, 78);
     border-radius: 4px;
-    width: 250px;
-    margin: 10px;
+    width: 300px;
+    height: 300px;
     padding: 25px;
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxy_nN61taFENMrRY3aQ-MaP4rCfkBNWz1hQ&usqp=CAU)
 }
 
 .name{
+    display:center;
+    margin: 0 auto;
     border: 4px solid #ddd;
     border-radius: 4px;
     width: 100px;
     height: 50px;
-    margin: 1px;
     padding: 25px;
     background-color: rgb(153, 142, 166);
-    
 }
 
 .cart{
+    display: center;
     text-align: center;
     font-size: 11px;
     border: 4px solid #ddd;

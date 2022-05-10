@@ -2,7 +2,7 @@ import React from 'react';
 import './Header.css'; 
 import logo from "../src/images/logoWithoutB.png"
 
-function Header(){
+function Header({cart}){
     function takeHome(){
         window.location.replace("http://localhost:3000/Home")
     }
@@ -13,9 +13,11 @@ function Header(){
                 <a className ='navLink' href="./Home" >Home</a> 
                 <a className ='navLink' href="./Clothing" >Clothing</a> 
                 <a className ='navLink' href="./Sale">Sale</a>
+                <a className ='navLink' href="./Cart">Cart</a>
             </nav>
             {/* <img className="headerImage" src={logo} alt="Logo" onClick={takeHome}></img>                                                     */}
 </div>
-   )
+
+)
 }
 export default Header;
