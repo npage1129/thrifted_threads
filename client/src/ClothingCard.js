@@ -1,20 +1,18 @@
 import React from 'react'
+import './ClothingCard.css'
+
+
 
 function ClothingCard({item}){
     return(
         <div>
             {item.map(item =>
-                <div className="wrapper">
-                    <div className="cards_wrap">
-                        <div className="card_item">
-                            <div className="card_inner">
-                                <div className="ItemImage" id="inCard">{item.img}</div>
-                                <div className="Item Name" id="inCard">{item.name}</div>
-                                <div className="ItemPrice" id="inCard">${item.price}</div>
-                            </div>
-                         </div>
-                    </div>
-                </div>
+                    <div className="cards">
+                            {item.on_sale ? <img src={item.img}/> : null}
+                            {item.on_sale ?<div className="name" id="inCard">{item.name} <br></br><br></br>${item.price}</div>: null }
+                            {item.on_sale ?<button className="cart">Add To Cart</button> : null}
+                        </div>
+                        
             )},
         </div>
     )
