@@ -2,15 +2,13 @@ import React, {useEffect ,useState} from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import ClothingCard from './ClothingCard'
+import Cart from './Cart';
 import './Home.css';
 
 function Home(){
-    const [cart, setCart] =useState([])
+    const [cart, setCart] = useState([])
     const [item, setItem] = useState([])
-    const addToCart = (product) => {
-        console.log('added to cart')
-        setCart([...cart, product]);
-    };
+    const[page, setPage] = useState(['cart'])
 
     useEffect(()=> {
         fetch('http://localhost:3000/products', {
@@ -19,11 +17,12 @@ function Home(){
         .then((resp) => resp.json())
         .then((data) => setItem(data))
     },[]) 
-
+    
     return(
         <div id="home" >
             <Header id='header' cart = {cart} setCart ={setCart}/>
-            <ClothingCard item ={item} setItem ={setItem} cart = {cart} setCart ={setCart} addToCart={addToCart}/>
+            <ClothingCard item ={item} setItem ={setItem} setCart={setCart} cart = {cart}/>
+            <Cart item= {item} setItem={setItem} setCart={setCart} cart={cart} page={page} setPage={setPage}/>
             <Footer id='footer'/>
         </div> 
     )
