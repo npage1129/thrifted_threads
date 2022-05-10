@@ -5,8 +5,12 @@ import ClothingCard from './ClothingCard'
 import './Home.css';
 
 function Home(){
-
+    const [cart, setCart] =useState([])
     const [item, setItem] = useState([])
+    const addToCart = (product) => {
+        console.log('added to cart')
+        setCart([...cart, product]);
+    };
 
     useEffect(()=> {
         fetch('http://localhost:3000/products', {
@@ -18,8 +22,8 @@ function Home(){
 
     return(
         <div id="home" >
-            <Header id='header'/>
-            <ClothingCard item ={item} setItem ={setItem}/>
+            <Header id='header' cart = {cart} setCart ={setCart}/>
+            <ClothingCard item ={item} setItem ={setItem} cart = {cart} setCart ={setCart} addToCart={addToCart}/>
             <Footer id='footer'/>
         </div> 
     )
