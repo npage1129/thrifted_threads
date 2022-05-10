@@ -1,0 +1,32 @@
+
+.img{
+    display: flex;
+    border: 2px solid rgb(83, 78, 78);
+    border-radius: 4px;
+    width: 250px;
+    margin: 10px;
+    padding: 25px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxy_nN61taFENMrRY3aQ-MaP4rCfkBNWz1hQ&usqp=CAU)
+}
+
+.name{
+    border: 4px solid #ddd;
+    border-radius: 4px;
+    width: 100px;
+    height: 50px;
+    margin: 1px;
+    padding: 25px;
+    background-color: rgb(153, 142, 166);
+    
+}
+
+.cart{
+    text-align: center;
+    font-size: 11px;
+    border: 4px solid #ddd;
+    border-radius: 8px;
+    width: 100px;
+    height: 40px;
+    background-color: rgb(210, 204, 218); 
+    text-overflow: none outside;
+}
