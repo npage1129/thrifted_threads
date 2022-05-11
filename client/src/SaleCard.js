@@ -1,0 +1,25 @@
+import './ClothingCard.css';
+import React from 'react';
+
+
+function SaleCard({item, setCart, cart}){
+    const addToCart = (product) => {
+        console.log('added to cart')
+        setCart([...cart, product]);
+    };
+    const newItems = item.filter(product => product.on_sale === true)
+    console.log(newItems)
+    return(
+        <div className="wrapper">
+            {newItems.map(item =>
+                    <div className="cards">
+                            {item.on_sale === true ? <img className="image" src={item.img}/> : null}
+                            {item.on_sale === true ? <p className="name" id="inCard">{item.name} <br></br>${item.price}</p>: null }
+                            {item.on_sale === true ? <button className="cart" onClick={(item)=>addToCart(item)}>Add To Cart</button> : null}
+                        </div>
+            )},
+        </div>
+    )
+}
+
+export default SaleCard;

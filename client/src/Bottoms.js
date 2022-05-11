@@ -1,27 +1,30 @@
-// import './Clothing.css';
+import React, {useEffect ,useState} from 'react';
 import Header from './Header';
 import Footer from './Footer';
-import React from 'react';
+import BottomsCard from './BottomsCard'
+import Cart from './Cart';
+// import './Home.css';
 
+function Bottoms(){
+    const [cart, setCart] = useState([])
+    const [item, setItem] = useState([])
+    const[page, setPage] = useState(['cart'])
 
-function Bottoms({item, setCart, cart}){
-    const addToCart = (product) => {
-        console.log('added to cart')
-        setCart([...cart, product]);
-    };
-    const newItems = item.filter(product => product.product_color === "green" ||product.product_color === "multi" )
-    console.log(newItems)
+    useEffect(()=> {
+        fetch('http://localhost:3000/products', {
+        
+    })
+        .then((resp) => resp.json())
+        .then((data) => setItem(data))
+    },[]) 
+    
     return(
-        <div className="wrapper">
-            {newItems.map(item =>
-                    <div className="cards">
-                            {item.product_color === "green" ||item.product_color === "multi" ? <img className="image" src={item.img}/> : null}
-                            {item.product_color ==="green" || item.product_color === "multi" ? <p className="name" id="inCard">{item.name} <br></br>${item.price}</p>: null }
-                            {item.product_color === "green" || item.product_color === "multi" ? <button className="cart" onClick={(item)=>addToCart(item)}>Add To Cart</button> : null}
-                        </div>
-                        
-            )},
-        </div>
+        <div id="home" >
+            <Header id='header' cart = {cart} setCart ={setCart}/>
+            <BottomsCard item ={item} setItem ={setItem} setCart={setCart} cart = {cart}/>
+            <Cart item= {item} setItem={setItem} setCart={setCart} cart={cart} page={page} setPage={setPage}/>
+            <Footer id='footer'/>
+        </div> 
     )
 }
 
