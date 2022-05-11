@@ -8,7 +8,7 @@ import './Home.css';
 function Home(){
     const [cart, setCart] = useState([])
     const [item, setItem] = useState([])
-    const[page, setPage] = useState(['cart'])
+    const[page, setPage] = useState(['products'])
 
     useEffect(()=> {
         fetch('http://localhost:3000/products', {
