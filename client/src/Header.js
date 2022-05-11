@@ -3,16 +3,13 @@ import './Header.css';
 import logo from "../src/images/logoWithoutB.png"
 
 function Header({setPage, page}){
-    function takeHome(){
-        window.location.replace("http://localhost:4000/Home")
-    }
 
     const navigateTo =(cartPage) => {
         setPage(page);
     }
     return(
         <div id="Header">
-            <img className='logo' src={logo} alt="Logo" onClick={takeHome}></img>
+            <a href= "/Home"><img className='logo' src={logo} alt="Logo"></img></a>
             <nav className="navBar">
                 <a className ='navLink' href="./Home" >Home</a>
 
@@ -29,6 +26,7 @@ function Header({setPage, page}){
 
 
                 <a className ='navLink' href="./Sale">Sale</a>
+                <a className ='navLink' href="./Reviews">Reviews</a>
             </nav>
             {/* <img className="headerImage" src={logo} alt="Logo" onClick={takeHome}></img>                                                     */}
 </div>
