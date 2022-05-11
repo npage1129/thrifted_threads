@@ -5,7 +5,7 @@ import Tops from './Tops';
 import Bottoms from './Bottoms';
 import Dresses from './Dresses';
 import Sale from './Sale';
-import Cart from './Cart';
+import Reviews from './Reviews';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
@@ -23,7 +23,7 @@ function App() {
       <Route path='/bottoms' element={<Bottoms/>}/>
       <Route path='/dresses' element={<Dresses/>}/>
       <Route path="/sale" element = {<Sale/>}/>
-      <Route path='/cart' element={<Cart/>}/>
+      <Route path="/reviews" element = {<Reviews/>}/>
             </Routes>
       </Router>
     </div>
