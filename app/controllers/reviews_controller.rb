@@ -9,6 +9,18 @@ class ReviewsController < ApplicationController
         render json: review, status: :created
     end
 
+    def update
+        review = Review.find(params[:id])
+        Review.update(review_params)
+        render json: review_params
+    end 
+
+    def destroy
+        review = Review.find(params[:id])
+        review.destroy
+        head :no_content
+    end
+
     private
 
     def review_params

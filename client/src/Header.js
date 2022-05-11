@@ -2,9 +2,13 @@ import React from 'react';
 import './Header.css'; 
 import logo from "../src/images/logoWithoutB.png"
 
-function Header({cart}){
+function Header({setPage, page}){
     function takeHome(){
         window.location.replace("http://localhost:4000/Home")
+    }
+
+    const navigateTo =(cartPage) => {
+        setPage(page);
     }
     return(
         <div id="Header">
@@ -25,7 +29,6 @@ function Header({cart}){
 
 
                 <a className ='navLink' href="./Sale">Sale</a>
-                <a className ='navLink' href="./Cart">Cart</a>
             </nav>
             {/* <img className="headerImage" src={logo} alt="Logo" onClick={takeHome}></img>                                                     */}
 </div>
