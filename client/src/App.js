@@ -1,6 +1,9 @@
 import React from 'react';
 import Home from './Home';
 import Clothing from './Clothing';
+import Tops from './Tops';
+import Bottoms from './Bottoms';
+import Dresses from './Dresses';
 import Sale from './Sale';
 import Cart from './Cart';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
@@ -16,6 +19,9 @@ function App() {
       <Route path= "/"  element = {<Home/>} />
       <Route path= "/home"  element = {<Home/>} />
       <Route path="/clothing" element = {<Clothing/>}/>
+      <Route path='/tops' element={<Tops/>}/>
+      <Route path='/bottoms' element={<Bottoms/>}/>
+      <Route path='/dresses' element={<Dresses/>}/>
       <Route path="/sale" element = {<Sale/>}/>
       <Route path='/cart' element={<Cart/>}/>
             </Routes>

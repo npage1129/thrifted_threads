@@ -1,3 +1,7 @@
+* {
+    font-family: monospace;
+}
+
 #Header {
     display: flex;
     flex-flow: row wrap;
@@ -15,7 +19,7 @@
 
 .navLink {
     margin-top: 70px;
-    margin-left: 300px;
+    margin-left: 100px;
     color: black;
     text-decoration: none;
     text-align: center;
@@ -32,4 +36,55 @@
     width: 13em;
     height: 13em;
     filter: brightness(3%);
+}
+
+.wrapper {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.menu-button {
+    background-color: transparent;
+    color: black;
+    padding: 16px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 55px;
+}
+
+.right-menu {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+.drop-down {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.drop-down a {
+    color: black;
+    text-decoration: none;
+    display:block;
+    margin: auto;
+}
+
+.drop-down a:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.right-menu:hover .drop-down{
+    display: block;
+}
+
+.right-menu:hover .menu-button {
+    background-color: transparent;
 }
