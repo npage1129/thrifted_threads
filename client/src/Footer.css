@@ -6,7 +6,7 @@ body {
     font-family: poppins;
     margin: 0;
     display: grid;
-    font-size: 14px;
+    font-size: 15px;
 }
 header p {
     padding: 50px;
@@ -56,6 +56,7 @@ h2 {
 .r-footer {
     display: flex;
     flex-flow: row wrap;
+    margin-left: 70px;
     
 }
 
@@ -79,6 +80,10 @@ h2 {
     padding-right: 20%;
     color: #999;
 }   
+
+.features {
+    margin-left: 20em;
+}
 
 @media screen and (min-width: 600px) {
     .r-footer > * {
