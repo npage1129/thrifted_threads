@@ -2,7 +2,6 @@ import React, {useEffect ,useState} from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import DressesCard from './DressesCard'
-import Cart from './Cart';
 // import './Home.css';
 
 function Dresses(){
@@ -20,9 +19,8 @@ function Dresses(){
     
     return(
         <div id="home" >
-            <Header id='header' cart = {cart} setCart ={setCart}/>
-            <DressesCard item ={item} setItem ={setItem} setCart={setCart} cart = {cart}/>
-            <Cart item= {item} setItem={setItem} setCart={setCart} cart={cart} page={page} setPage={setPage}/>
+            <Header id='header' />
+            <DressesCard item ={item} setItem ={setItem} />
             <Footer id='footer'/>
         </div> 
     )
