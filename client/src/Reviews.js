@@ -22,7 +22,14 @@ function Reviews() {
 
     function handleSubmit(event) {
         event.preventDefault();
+        fetch('/reviews', postSet)
+        .then(response => response.json())
+        .then((data)=> setShow([...show, data]))
+        setName('')
+        setEmail('')
+        setReview('')
     }
+
         useEffect(()=>{
         fetch('/reviews')
         .then(response => response.json())
@@ -32,21 +39,27 @@ function Reviews() {
     console.log(show)
 
         function handleDelete(review){
-            const url = `http://localhost:3000/reviews/${review}`
+            const id = review.id
+            let newShow = show.filter(obj=> obj.id != review.id)  
+            const url = `http://localhost:3000/reviews/${review.id}`
             fetch(url,{
                 method:'DELETE',
                 headers:{'Content-Type':'application/json'}
             })
             .then(res => res.json())
-            .then(data => console.log(data));
+            .then(data => {
+                console.log(data)
         
+            });
+            setShow(newShow)
         }
         useEffect(()=> {
             fetch(`http://localhost:3000/reviews`)
                 .then((resp) => resp.json())
                 .then((data) => setUpdate(()=>data))
         },[])
-    
+
+
     function handleChange(e) {
         e.preventDefault();
     
@@ -54,11 +67,21 @@ function Reviews() {
             name: updatedName,
             email: updatedEmail,
             review: updatedReview
-       
+    
         }
     
         const name1 = updatedName
-       
+        let newUpdate = show.map(obj=> {
+            if (obj.id === id){
+                obj.name = updatedName
+                obj.email = updatedEmail
+                obj.review = updatedReview
+                return obj
+            }else{
+                return obj
+            }
+    
+        })
         fetch(`http://localhost:3000/reviews/${id}`,{
             method: "PATCH",
             headers: {"Content-Type": "application/json"},
@@ -66,14 +89,20 @@ function Reviews() {
         })
     
             .then((resp) => resp.json())
-            .then((data) => setUpdate(()=>data)
+            .then((data) => {
+
+
+                setUpdatedName('')
+                setUpdatedEmail('')
+                setUpdatedReview('')
+                setShow(newUpdate)}
             
             
         
             
         )}
         
-       
+    
 
     return(
 
@@ -88,7 +117,14 @@ function Reviews() {
             <h1 id="subTitle">Submit a comment here:</h1>
             <div className="wrapper">
             {show?.map(review =>(
-                    <div onClick={()=>setId(review.id)}className="reviews">
+                    <div 
+                    onClick={()=>
+                        { setUpdatedName(review.name) 
+                            setUpdatedEmail(review.email) 
+                            setUpdatedReview(review.review)
+                            setId(review.id)
+                        }}
+                    className="reviews">
                         <ul>
                             <li> {review.name} </li><button onClick={() =>handleDelete(review)}>delete</button>
                             <li> {review.email} </li>
@@ -109,7 +145,7 @@ function Reviews() {
                     <label for='review'>Review: </label>
                     <input type="string" className="allInput" id="review" name='review' value={review} placeholder="Your Comment.." onChange={(event)=>{setReview(event.target.value)}}/>
                     <br></br>
-                    <button id="subButton" type="submit"  onClick={()=>handleSubmit}>Submit</button>
+                    <button id="subButton" type="submit"  onClick={(e)=>handleSubmit(e)}>Submit</button>
                 </form>
                 </div>
                 <div className="Update">
@@ -128,8 +164,7 @@ function Reviews() {
                 </div>
             </div>
         </>
-        <Footer />
-        </div>
+
     
     )
             }
