@@ -1,7 +1,7 @@
 puts "Seeding user"
 user1 = User.create(username: "nicolexpage2", password: "noodle" , first_name: "Nicole" , last_name: "Page")
-user2 = User.create(username: "friends4live", password: "nest", first_name: "Beyonce", last_name: "Knowles")
-user3 = User.create(username: "blvd4me", password: "peanut", first_name: "Ray", last_name: "Johnson")
+user2 = User.create(username: "friends4live", password: "nesting", first_name: "Beyonce", last_name: "Knowles")
+user3 = User.create(username: "blvd4me", password: "peanuts", first_name: "Ray", last_name: "Johnson")
 user4 = User.create(username: "catsr2lyme", password: "futures", first_name: "Phineas", last_name: "Pijoul")
 user5 = User.create(username: "factsssss25", password: "childish", first_name: "Ferb" , last_name: "Casserole")
 
