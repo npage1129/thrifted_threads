@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Header from './Header';
-
+import Footer from './Footer';
+import './Reviews.css';
 
 function Reviews() {
     const [name, setName] = useState('')
@@ -127,6 +128,7 @@ function Reviews() {
                 </div>
             </div>
         </>
+        <Footer />
         </div>
     
     )

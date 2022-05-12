@@ -15,7 +15,6 @@ function TopsCard({item, setCart, cart}){
                     <div className="cards">
                             {item.product_category === "top" ? <img className="image" src={item.img}/> : null}
                             {item.product_category ==="top" ? <p className="name" id="inCard">{item.name} <br></br>${item.price}</p>: null }
-                            {item.product_category === "top" ? <button className="cart" onClick={(item)=>addToCart(item)}>Add To Cart</button> : null}
                         </div>
             )},
         </div>

@@ -23,12 +23,12 @@ function Footer(){
   </li>
   <li class="features">
   <h2>
-  Customer Service</h2>
+  Customer Care</h2>
     <ul class="box">
-    <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">Here</a></li>
-    <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">Instead</a></li>
-    <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">Of</a></li>
-    <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">Navbar</a></li>
+    <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">605-475-6973</a></li>
+    <li><a href="/Reviews">Submit A Review</a></li>
+    <li><a href="https://www.asos.com/us/discover/size-charts/women/">Size Guide</a></li>
+    <li><a href="https://www.nastygal.com/page/terms-and-conditions.html">Terms & Conditions</a></li>
   </ul>
   </li>
   
@@ -36,10 +36,10 @@ function Footer(){
   <h2>
   About</h2>
     <ul class="box">
-    <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">Our</a></li>
-    <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">Links</a></li>
-    <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">Or</a></li>
-    <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">Redirect</a></li>
+    <li><a href="https://github.com/npage1129" target="_blank">Nicole's GitHub</a></li>
+    <li><a href="https://github.com/RainbowLex" target="_blank">Alexia's GitHub</a></li>
+    <li><a href="https://www.linkedin.com/in/nicole-page-556910175/" target="_blank">Nicole's LinkedIn</a></li>
+    <li><a href="https://www.linkedin.com/in/alexia-velador-67b76a235/" target="_blank">Alexia's LinkedIn</a></li>
   </ul>
   </li>
   </ul>

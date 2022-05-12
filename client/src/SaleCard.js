@@ -15,7 +15,6 @@ function SaleCard({item, setCart, cart}){
                     <div className="cards">
                             {item.on_sale === true ? <img className="image" src={item.img}/> : null}
                             {item.on_sale === true ? <p className="name" id="inCard">{item.name} <br></br>${item.price}</p>: null }
-                            {item.on_sale === true ? <button className="cart" onClick={(item)=>addToCart(item)}>Add To Cart</button> : null}
                         </div>
             )},
         </div>
