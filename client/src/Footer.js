@@ -15,7 +15,7 @@ function Footer(){
     <h2>
   Account</h2>
     <ul class="box">
-    <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">Account</a></li>
+    <li><a href="./Account">Account</a></li>
     <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">Links</a></li>
     <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">Here</a></li>
     <li><a href="https://www.snopes.com/tachyon/2016/10/spongebob.jpg?resize=865%2C452&crop_strategy=smart">Maybe?</a></li>
