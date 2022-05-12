@@ -10,6 +10,7 @@
     border-radius: 30px;
     /* background-image: url('https://cdn.onlinefabricstore.com/products/LBURWHI_1.jpg?width=750'); */
     opacity: .70;
+    height: 280px;
 }
 
 .navBar {
@@ -18,7 +19,7 @@
 }
 
 .navLink {
-    margin-top: 70px;
+    margin-top: 90px;
     margin-left: 100px;
     color: black;
     text-decoration: none;
@@ -39,7 +40,7 @@
     cursor: pointer;
 }
 
-.wrapper {
+.wrapper1 {
     width: 100px;
     margin: 0 auto;
 }
@@ -47,18 +48,18 @@
 .menu-button {
     background-color: transparent;
     color: black;
-    padding: 16px;
+    /* padding: 16px; */
     cursor: pointer;
     border: 1px solid #fff;
     font-size: 2em;
     font-weight: bold;
-    margin-top: 55px;
+    margin-top: 90px;
 }
 
 .right-menu {
     position: relative;
     display: inline-block;
-    float: right;
+    /* float: right; */
 }
 
 .drop-down {
@@ -66,6 +67,7 @@
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
+    min-height: 176px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
 }
@@ -75,6 +77,7 @@
     text-decoration: none;
     display:block;
     margin: auto;
+    padding: 12px;
 }
 
 .drop-down a:hover {

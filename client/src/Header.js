@@ -3,7 +3,9 @@ import './Header.css';
 import logo from "../src/images/logoWithoutB.png"
 
 function Header({setPage, page}){
-
+    function takeAll(){
+        window.location.replace("/Clothing")
+    }
     const navigateTo =(cartPage) => {
         setPage(page);
     }
@@ -13,9 +15,9 @@ function Header({setPage, page}){
             <nav className="navBar">
                 <a className ='navLink' href="./Home" >Home</a>
 
-            <div className="wrapper">
+            <div className="wrapper1">
                 <div className="right-menu">
-                    <button className ="menu-button">Clothing</button>
+                    <button className ="menu-button" onClick={takeAll}>Clothing</button>
                         <div className="drop-down">
                             <a className ='navLink' href="./Tops" >Tops</a>
                             <a className ='navLink' href="./Bottoms" >Bottoms</a>
