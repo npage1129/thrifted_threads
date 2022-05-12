@@ -2,11 +2,9 @@ import React, {useEffect ,useState} from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import BottomsCard from './BottomsCard'
-import Cart from './Cart';
 // import './Home.css';
 
 function Bottoms(){
-    const [cart, setCart] = useState([])
     const [item, setItem] = useState([])
     const[page, setPage] = useState(['cart'])
 
@@ -20,9 +18,8 @@ function Bottoms(){
     
     return(
         <div id="home" >
-            <Header id='header' cart = {cart} setCart ={setCart}/>
-            <BottomsCard item ={item} setItem ={setItem} setCart={setCart} cart = {cart}/>
-            <Cart item= {item} setItem={setItem} setCart={setCart} cart={cart} page={page} setPage={setPage}/>
+            <Header id='header'/>
+            <BottomsCard item ={item} setItem ={setItem}/>
             <Footer id='footer'/>
         </div> 
     )
