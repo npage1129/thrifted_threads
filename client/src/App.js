@@ -6,6 +6,7 @@ import Bottoms from './Bottoms';
 import Dresses from './Dresses';
 import Sale from './Sale';
 import Reviews from './Reviews';
+import Account from './Account';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 
@@ -24,6 +25,7 @@ function App() {
       <Route path='/dresses' element={<Dresses/>}/>
       <Route path="/sale" element = {<Sale/>}/>
       <Route path="/reviews" element = {<Reviews/>}/>
+      <Route path="/account" element = {<Account/>}/>
             </Routes>
       </Router>
     </div>

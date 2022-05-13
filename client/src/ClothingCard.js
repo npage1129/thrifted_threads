@@ -14,10 +14,10 @@ function ClothingCard({item, addToCart}){
                         </div>
                         
             )},
-        </div>
+    </div>
     )
 }
 
 
 
-export default ClothingCard
+export default ClothingCard;

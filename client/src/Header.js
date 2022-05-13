@@ -29,6 +29,7 @@ function Header({setPage, page}){
 
                 <a className ='navLink' href="./Sale">Sale</a>
                 <a className ='navLink' href="./Reviews">Reviews</a>
+                <a className ='navLink' href="./Account">Account</a>
             </nav>
             {/* <img className="headerImage" src={logo} alt="Logo" onClick={takeHome}></img>                                                     */}
 </div>
