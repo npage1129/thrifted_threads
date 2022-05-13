@@ -164,9 +164,11 @@ function Reviews() {
                 </div>
             </div>
         </>
+
 </div>
+
     
     )
-            }
+        }
         
 export default Reviews;
