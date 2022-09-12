@@ -4,6 +4,7 @@ import Footer from './Footer';
 import ClothingCard from './ClothingCard'
 import './Home.css';
 
+
 function Home(){
     const [item, setItem] = useState([])
   
