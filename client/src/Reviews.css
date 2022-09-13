@@ -1,0 +1,25 @@
+.submission{
+    width: 100%;
+    margin-top: 100px;
+    text-align: center;
+}
+#container{
+float: left;
+text-align: center;
+margin-left: 200px;
+margin-right: 250px;
+background-color: rgb(237, 214, 214);
+}
+#container2{
+    background-color: rgb(237, 214, 214);
+    float: right;
+    text-align: center;
+    margin-right: 200px
+}
+.reviews{
+  font-weight:800;  
+  background-color: white;
+}
+#subTitle{
+    background-color: rgb(237, 214, 214);
+}

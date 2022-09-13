@@ -126,15 +126,16 @@ function Reviews() {
                         }}
                     className="reviews">
                         <ul>
-                            <li> {review.name} </li><button onClick={() =>handleDelete(review)}>delete</button>
-                            <li> {review.email} </li>
-                            <li> {review.review} </li>
+                            <ul> {review.name} </ul>
+                            <ul> {review.email} </ul>
+                            <ul> {review.review} </ul>
+                            <button onClick={() =>handleDelete(review)}>delete</button>
                             </ul>
                         </div>          
             )    
             )}
             </div>
-            <div className="Submission">
+            <div className="submission">
                 <form id="container">
                     <label for='name'>Name: </label>
                     <input type="string" className="allInput" id="name" name='name' value = {name} placeholder="Your first name.." onChange={(event)=>{setName(event.target.value)}}/>
