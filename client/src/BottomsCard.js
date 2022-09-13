@@ -8,7 +8,7 @@ function BottomsCard({item, setCart, cart}){
         setCart([...cart, product]);
     };
     const newItems = item.filter(product => product.product_category === "bottoms")
-    console.log(newItems)
+ 
     return(
         <div className="wrapper">
             {newItems.map(item =>

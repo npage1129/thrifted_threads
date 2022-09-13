@@ -9,12 +9,14 @@ function SaleCard({item, setCart, cart}){
     };
     const newItems = item.filter(product => product.on_sale === true)
     console.log(newItems)
+  
     return(
         <div className="wrapper">
             {newItems.map(item =>
                     <div className="cards">
                             {item.on_sale === true ? <img className="image" src={item.img}/> : null}
-                            {item.on_sale === true ? <p className="name" id="inCard">{item.name} <br></br>${item.price}</p>: null }
+                            {item.on_sale === true ? <p className="name" id="inCard">{item.name}<br></br> <strike style={{color:'red'}}>${item.original_price}</strike> <br></br> ${item.price}</p> : null}
+                    
                         </div>
             )},
         </div>
